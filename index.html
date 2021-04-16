@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <title>John Sena Akoto Portfolio</title>
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/mylogo.png" alt="">
+            </div>
+
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#research" class="nav__link">What I do </a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Projects </a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Introduction-->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hello world, I am <strong>John Sena Akoto</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Python Developer || Research Scientist</p>
+            <img src="img/Head_shot.jpg" alt="a profile picture" class="intro__img">
+        </section>
+
+
+        <!-- My Research and Projects-->
+        <section class="my-research" id="research">
+            <h2 class="section__title section__title--research">What I do</h2>
+            <div class ="research">
+                <div class="service">
+                    <h3>Computer Science</h3>
+                    <p>I'm a developer and data scientist. I have experience with Backend Development (Python, C, C++), Frontend Development (HTML5, CSS, JS), Data Visualization (Python, R), 
+                        ML (Supervised/Unsupervised Models, NLP,Deep learning)
+                    </p>
+                </div> <!--/one column of what i do-->
+
+                <div class="service">
+                    <h3>Geophysics</h3>
+                    <p>I'm a Geophysics researcher at Texas Tech University, advised by Dr. Harold Gurrola.
+                        I have experience with Inverse Theory, Receiver Function, Seismic Mapping and Tomography
+                    </p>
+                </div> <!--/one column of what i do-->
+
+                <div class="service">
+                    <h3>Landscaping</h3>
+                    <p>Landscaping hobbyist. I enjoy spending my weekends mowing lawns and trimming hedges.
+                        I love plants, propagating pothos and other house plants.
+                    </p>
+                </div> <!--/one column of what i do-->
+
+            </div>
+
+            <a href="#work" class="btn">My Work</a>
+        </section>
+
+        <!-- About me -->
+        <section class="about-me" id="about">
+            <h2 class="section__title section__title--about">Who I am</h2>
+            <p class="section__subtitle section__subtitle--about">Python Developer & Data Scientist & Geophysicist   </p>
+
+            <div class="about-me__body">
+                <p>Hello! I am John Sena Akoto, a Ph.D. Geophysicist, Data Scientist pursuing an MS in Computer Science at Texas Tech University.
+                    </p>
+                
+                <p>I hope to leverage my strong technical background in Earth Science and Physics with my programming skills to contribute meaningfully
+                     to current global issues that constantly require more interdisciplinary collaboration. </p> 
+                
+                <p>My interests include: Design and Analysis of Algorithms, Machine Learning, Artificial Intelligence, 
+                    Cloud Architecture, Earth and Planetary Science, python, and  landscaping hobbyist  </p>
+
+                <p>Feel free to check out my projects and connect with me on my profiles </p>
+            </div>
+
+            <img src="img/Full_body_shot.jpg" alt="a profile picture" class="about-me__img">
+        </section>
+
+        <!-- My Work -->
+        <section class="mywork" id="work">
+            <h2 class="section__title section__title--work">My work</h2>
+            <p class="section__subtitle section__subtitle--work">A selection range of work </p>
+
+            <ul class="portfolio">
+                <!--Portfolio item 01-->
+                <li class="portfolio__item"><a class="portfolio__link" href = "https://github.com/johnsenaakoto/winery-multivariate-classification" target="_blank">Data Science (Analytics) - Wine Multivariate Classification</a></li>
+
+                <!--Portfolio item 02-->
+                <li class="portfolio__item"><a class="portfolio__link" href = "https://github.com/johnsenaakoto/WID" target="_blank">Data Processing (Geophysics) - Wavefield Iterative Deconvolution</a></li>
+
+                <!--Portfolio item 03-->
+                <li class="portfolio__item"><a class="portfolio__link" href = "https://github.com/johnsenaakoto/WeatherApp" target="_blank">Python App - WeatherApp</a></li>
+
+                <!--Portfolio item 04-->
+                <li class="portfolio__item"><a class="portfolio__link" href = "https://github.com/johnsenaakoto/google_foobar_challenge_lvl3" target="_blank"> Data Structures and Algorithms - Google Foobar Challenge</a></li>
+
+                <!--Portfolio item 05-->
+                <li class="portfolio__item"><a class="portfolio__link" href = "https://github.com/johnsenaakoto/Conway_Game_of_Life" target="_blank">Python App - Conway Game of Life</a></li>
+            </ul>
+        </section>
+
+        <!-- Footer -->
+        <footer class = "footer">
+            <a href="mailto:johnsenaakoto@gmail.com" class="footer__link">johnsenaakoto@gmail</a>
+            
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/johnsenaakoto" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+                
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/johnakoto/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                
+                <li class="social-list__item">
+                    <a class="social-list__link"href="https://docs.google.com/document/d/1Bz_cBVauC-dDHM5ynbhn5Tgb2DyN9tfDzLaqdN8HLCo/edit?usp=sharing" target="_blank">CV</a></li>
+                
+                
+            </ul>
+        </footer>
+        <script src="js/index.js"></script>
+
+    </body>
+</html>
