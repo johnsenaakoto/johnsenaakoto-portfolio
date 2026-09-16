@@ -8,54 +8,111 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;650;750;850&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
+        <script src="js/index.js" defer></script>
     </head>
     <body>
         <a class="skip-link" href="#main">Skip to content</a>
+        <svg class="icon-sprite" aria-hidden="true">
+            <symbol id="icon-user" viewBox="0 0 24 24">
+                <path d="M20 21a8 8 0 0 0-16 0"></path>
+                <path d="M12 13a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z"></path>
+            </symbol>
+            <symbol id="icon-briefcase" viewBox="0 0 24 24">
+                <path d="M10 6V5a2 2 0 0 1 2-2h0a2 2 0 0 1 2 2v1"></path>
+                <path d="M3 8h18v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8Z"></path>
+                <path d="M3 13h18"></path>
+            </symbol>
+            <symbol id="icon-cpu" viewBox="0 0 24 24">
+                <path d="M9 9h6v6H9z"></path>
+                <path d="M4 9h2"></path><path d="M4 15h2"></path><path d="M18 9h2"></path><path d="M18 15h2"></path>
+                <path d="M9 4v2"></path><path d="M15 4v2"></path><path d="M9 18v2"></path><path d="M15 18v2"></path>
+                <path d="M7 7h10v10H7z"></path>
+            </symbol>
+            <symbol id="icon-server" viewBox="0 0 24 24">
+                <path d="M4 4h16v6H4z"></path>
+                <path d="M4 14h16v6H4z"></path>
+                <path d="M8 7h.01"></path><path d="M8 17h.01"></path>
+            </symbol>
+            <symbol id="icon-shield-check" viewBox="0 0 24 24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"></path>
+                <path d="m9 12 2 2 4-4"></path>
+            </symbol>
+            <symbol id="icon-wave" viewBox="0 0 24 24">
+                <path d="M3 12c2.2-4 4.4-4 6.6 0s4.4 4 6.6 0S20.6 8 23 12"></path>
+                <path d="M3 18c2.2-4 4.4-4 6.6 0s4.4 4 6.6 0S20.6 14 23 18"></path>
+            </symbol>
+            <symbol id="icon-chart" viewBox="0 0 24 24">
+                <path d="M4 19V5"></path>
+                <path d="M4 19h16"></path>
+                <path d="m7 15 4-4 3 3 5-7"></path>
+            </symbol>
+            <symbol id="icon-refresh" viewBox="0 0 24 24">
+                <path d="M21 12a9 9 0 0 1-15.3 6.4"></path>
+                <path d="M3 12A9 9 0 0 1 18.3 5.6"></path>
+                <path d="M18 2v4h-4"></path>
+                <path d="M6 22v-4h4"></path>
+            </symbol>
+            <symbol id="icon-leaf" viewBox="0 0 24 24">
+                <path d="M5 19c8 0 14-6 14-14v0H9a6 6 0 0 0-4 10.5"></path>
+                <path d="M5 19c0-5 3-8 8-9"></path>
+            </symbol>
+            <symbol id="icon-mail" viewBox="0 0 24 24">
+                <path d="M4 6h16v12H4z"></path>
+                <path d="m4 7 8 6 8-6"></path>
+            </symbol>
+            <symbol id="icon-github" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M12 .5A11.5 11.5 0 0 0 8.36 22.9c.58.1.8-.25.8-.56v-2.02c-3.27.71-3.96-1.4-3.96-1.4-.53-1.36-1.3-1.72-1.3-1.72-1.07-.73.08-.72.08-.72 1.18.08 1.8 1.22 1.8 1.22 1.05 1.8 2.76 1.28 3.43.98.1-.76.41-1.28.75-1.57-2.61-.3-5.36-1.31-5.36-5.82 0-1.29.46-2.34 1.21-3.16-.12-.3-.52-1.5.12-3.12 0 0 .99-.32 3.24 1.2a11.2 11.2 0 0 1 5.9 0c2.25-1.52 3.24-1.2 3.24-1.2.64 1.62.24 2.82.12 3.12.75.82 1.2 1.87 1.2 3.16 0 4.52-2.75 5.51-5.37 5.81.42.37.8 1.1.8 2.21v3.03c0 .31.21.67.81.56A11.5 11.5 0 0 0 12 .5Z"></path>
+            </symbol>
+            <symbol id="icon-linkedin" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V8.98h3.42v1.57h.05a3.75 3.75 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.29ZM5.32 7.41a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14Zm1.78 13.04H3.53V8.98H7.1v11.47ZM22.22 0H1.77C.8 0 0 .77 0 1.72v20.56C0 23.23.8 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0Z"></path>
+            </symbol>
+        </svg>
 
         <header class="site-header">
             <nav class="nav" aria-label="Main navigation">
-                <a href="#about">About</a>
-                <a href="#work">Work</a>
-                <a href="#notes">Outside work</a>
-                <a href="#contact">Contact</a>
+                <a href="#about"><svg class="icon" aria-hidden="true"><use href="#icon-user"></use></svg>About</a>
+                <a href="#work"><svg class="icon" aria-hidden="true"><use href="#icon-briefcase"></use></svg>Work</a>
+                <a href="#notes"><svg class="icon" aria-hidden="true"><use href="#icon-leaf"></use></svg>Outside work</a>
+                <a href="#contact"><svg class="icon" aria-hidden="true"><use href="#icon-mail"></use></svg>Contact</a>
             </nav>
         </header>
 
         <main id="main">
             <section class="hero" id="top">
                 <div class="hero-name">
-                    <h1>John Sena<br>Akoto</h1>
+                    <img class="hero-profile" src="img/hero-profile.jpg" alt="John Sena Akoto near coastal cliffs">
+                    <h1>John Sena Akoto</h1>
                 </div>
 
                 <div class="hero-brief">
                     <p class="statement">
-                        I build reliable systems for compute and data, with a growing focus on AI infrastructure,
-                        GPU clusters, distributed platforms, and market intelligence.
+                        I engineer the infrastructure the AI frontier runs on.
                     </p>
                     <p>
-                        I am a software engineer at Oracle. My path runs through geophysics, scientific computing,
-                        and cloud systems; lately, it also includes Krom Analytics, a data initiative for understanding
-                        Ghanaian markets from the ground up.
+                        From modeling the earth's subsurface to building the infrastructure behind AI. I engineer
+                        systems for domains no one's fully mapped yet. At Oracle, that's cloud and AI infra. At Krom
+                        Analytics, it's Ghana's informal markets — bringing the same rigor to economies the data has
+                        never reached.
                     </p>
                     <div class="links" aria-label="Profile links">
-                        <a href="https://github.com/johnsenaakoto" target="_blank" rel="noopener">GitHub</a>
-                        <a href="https://www.linkedin.com/in/johnakoto/" target="_blank" rel="noopener">LinkedIn</a>
+                        <a href="https://github.com/johnsenaakoto" target="_blank" rel="noopener"><svg class="icon icon--brand" aria-hidden="true"><use href="#icon-github"></use></svg>GitHub</a>
+                        <a href="https://www.linkedin.com/in/johnakoto/" target="_blank" rel="noopener"><svg class="icon icon--brand" aria-hidden="true"><use href="#icon-linkedin"></use></svg>LinkedIn</a>
                     </div>
                 </div>
 
                 <div class="hero-rail" aria-label="Snapshot">
                     <dl class="facts facts--compact">
                         <div>
-                            <dt>Now</dt>
+                            <dt><svg class="icon" aria-hidden="true"><use href="#icon-briefcase"></use></svg>Now</dt>
                             <dd>Software Engineer, Oracle</dd>
                         </div>
                         <div>
-                            <dt>Focus</dt>
+                            <dt><svg class="icon" aria-hidden="true"><use href="#icon-cpu"></use></svg>Focus</dt>
                             <dd>AI infrastructure · GPU compute</dd>
                         </div>
                         <div>
-                            <dt>Also</dt>
-                            <dd>Krom Analytics · tennis · gardening</dd>
+                            <dt><svg class="icon" aria-hidden="true"><use href="#icon-leaf"></use></svg>Also</dt>
+                            <dd>Krom Analytics · travel · soccer · gardening</dd>
                         </div>
                     </dl>
                 </div>
@@ -64,7 +121,7 @@
             <section class="section" id="about">
                 <p class="section-number">01 · About</p>
                 <div class="section-split">
-                <h2>Infrastructure, reliability, observability at scale.</h2>
+                <h2>Infrastructure, resilience, observability at scale.</h2>
                     <p>
                         I like work where the details matter: scheduling, reliability, performance, data quality,
                         and the messy last mile between an idea and a system people can actually use.
@@ -77,26 +134,26 @@
                 <h2>What I build</h2>
                 <p class="section-lede">
                     My current center of gravity is AI infrastructure: compute environments, schedulers,
-                    distributed systems, and the tooling around large workloads.
+                    distributed systems, and the tooling around hyperscale workloads.
                 </p>
                 <div class="project-list">
                     <a href="https://github.com/johnsenaakoto/slurm-project" target="_blank" rel="noopener">
-                        <strong>Slurm cluster automation</strong>
+                        <strong><svg class="icon" aria-hidden="true"><use href="#icon-server"></use></svg>Slurm cluster automation</strong>
                         <span>Provisioning, configuration, and validation work for distributed compute clusters.</span>
                         <em>AI infrastructure · scheduling · shell</em>
                     </a>
-                    <a href="https://github.com/johnsenaakoto/Secure-Messaging-Program" target="_blank" rel="noopener">
-                        <strong>Distributed systems foundations</strong>
-                        <span>Multi-threaded secure messaging with confidentiality, integrity, and non-repudiation.</span>
-                        <em>Java · systems · security</em>
-                    </a>
-                    <a href="https://github.com/johnsenaakoto/Music_Genre_Classification" target="_blank" rel="noopener">
-                        <strong>Machine learning workflows</strong>
-                        <span>Notebook-based model development and evaluation, useful context for the workloads AI infrastructure supports.</span>
-                        <em>Jupyter · ML · data</em>
-                    </a>
+                    <article>
+                        <strong><svg class="icon" aria-hidden="true"><use href="#icon-cpu"></use></svg>AI infrastructure provisioning</strong>
+                        <span>I build the bootstrap and burn-in systems that turn raw datacenter hardware into trustworthy AI infrastructure — catching bad GPUs, bad networking, and thermal issues before they take down a training run.</span>
+                        <em>GPU compute · automation · cloud platforms</em>
+                    </article>
+                    <article>
+                        <strong><svg class="icon" aria-hidden="true"><use href="#icon-shield-check"></use></svg>Infrastructure resilience</strong>
+                        <span>Failure attribution, remediation, and reliability work across distributed services and production infrastructure.</span>
+                        <em>observability · incident response · remediation</em>
+                    </article>
                     <a href="https://github.com/johnsenaakoto/WID" target="_blank" rel="noopener">
-                        <strong>Scientific computing roots</strong>
+                        <strong><svg class="icon" aria-hidden="true"><use href="#icon-wave"></use></svg>Scientific computing roots</strong>
                         <span>Wavefield iterative deconvolution for seismic imaging research.</span>
                         <em>MATLAB · geophysics · computation</em>
                     </a>
@@ -108,23 +165,35 @@
                 <div class="section-split">
                     <h2>Side quests</h2>
                     <p>
-                        A few threads that make the work feel like mine: public-interest data, the learning loop
-                        around AI systems, and life away from the keyboard.
+                        A few threads that make the work feel like mine: giving back to my Ghanaian community,
+                        self growth around new technology, and life away from the keyboard.
                     </p>
                 </div>
                 <div class="note-grid">
                     <article>
-                        <h3>Krom Analytics</h3>
+                        <h3><svg class="icon" aria-hidden="true"><use href="#icon-chart"></use></svg>Krom Analytics</h3>
                         <p>Field data, price monitoring, and market intelligence for Ghana's informal markets.</p>
                     </article>
                     <article>
-                        <h3>Learning loop</h3>
+                        <h3><svg class="icon" aria-hidden="true"><use href="#icon-refresh"></use></svg>Learning loop</h3>
                         <p>AI infrastructure, GPU scheduling, Kubernetes-native platforms, and systems that make compute useful.</p>
                     </article>
                     <article>
-                        <h3>Outside work</h3>
-                        <p>Tennis, gardening, houseplants, volunteering, and mentoring students through CodePath.</p>
+                        <h3><svg class="icon" aria-hidden="true"><use href="#icon-leaf"></use></svg>Outside work</h3>
+                        <p>Traveling, soccer, tennis, gardening, houseplants, volunteering, and mentoring students through CodePath.</p>
                     </article>
+                </div>
+                <div class="photo-carousel" aria-label="Photos from travel, soccer, and gardening">
+                    <button class="photo-carousel__button" type="button" data-carousel-prev aria-label="Show previous photos">&lt;</button>
+                    <div class="photo-reel" tabindex="0">
+                        <img src="img/outside-mountain.jpg" alt="John above a mountain valley and clouds" loading="lazy">
+                        <img src="img/outside-castle-garden.jpg" alt="John beside a castle garden walkway in Ireland" loading="lazy">
+                        <img src="img/plant-bird-of-paradise.jpg" alt="Large indoor bird of paradise plant" loading="lazy">
+                        <img src="img/plant-planters.jpg" alt="Balcony planters with colorful flowers" loading="lazy">
+                        <img src="img/outside-ghana-match.jpg" alt="John at a Ghana football match" loading="lazy">
+                        <img src="img/outside-cape-point.jpg" alt="John at Cape Point in South Africa" loading="lazy">
+                    </div>
+                    <button class="photo-carousel__button" type="button" data-carousel-next aria-label="Show next photos">&gt;</button>
                 </div>
             </section>
 
@@ -133,9 +202,9 @@
                 <h2>Get in touch</h2>
                 <p>Happy to talk infrastructure, data products, research, Krom Analytics, or a good tennis rally.</p>
                 <div class="links">
-                    <a href="mailto:johnsenaakoto@gmail.com">email</a>
-                    <a href="https://github.com/johnsenaakoto" target="_blank" rel="noopener">github</a>
-                    <a href="https://www.linkedin.com/in/johnakoto/" target="_blank" rel="noopener">linkedin</a>
+                    <a href="mailto:johnsenaakoto@gmail.com"><svg class="icon" aria-hidden="true"><use href="#icon-mail"></use></svg>email</a>
+                    <a href="https://github.com/johnsenaakoto" target="_blank" rel="noopener"><svg class="icon icon--brand" aria-hidden="true"><use href="#icon-github"></use></svg>github</a>
+                    <a href="https://www.linkedin.com/in/johnakoto/" target="_blank" rel="noopener"><svg class="icon icon--brand" aria-hidden="true"><use href="#icon-linkedin"></use></svg>linkedin</a>
                 </div>
             </section>
         </main>
